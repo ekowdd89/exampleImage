@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-
+import Logo from './components/Logo'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Logo />
+      <Text style={styles.text}>React Native Expo</Text>
     </View>
   );
 }
@@ -12,8 +13,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection:'column',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text:{
+    marginTop:10,
+    fontSize:14,
+    fontWeight:'bold',
+    color:'blue'
+  }
 });
